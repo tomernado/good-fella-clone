@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -13,8 +8,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Website Clone",
-  description: "Pixel-perfect website clone",
+  title: "Good Fella — Frontend Development Studio | Websites That Move",
+  description:
+    "Good Fella is a frontend development studio that works as your dedicated team. One monthly fee, no contracts, and no hourly tracking.",
 };
 
 export default function RootLayout({
@@ -25,9 +21,16 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      data-theme="dark"
+      className={`${geistMono.variable} antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <head>
+        {/* Adobe Typekit – aktiv-grotesk */}
+        <link rel="stylesheet" href="https://use.typekit.net/tdy7azi.css" />
+      </head>
+      <body className="min-h-svh bg-background text-foreground">
+        {children}
+      </body>
     </html>
   );
 }
