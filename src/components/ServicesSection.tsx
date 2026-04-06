@@ -99,7 +99,7 @@ export function ServicesSection() {
               marginBottom: "12px",
             }}
           >
-            // WHAT&apos;S INCLUDED
+            {"// WHAT'S INCLUDED"}
           </span>
           <h2
             style={{

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { GoodLogo, MenuIcon } from "@/components/icons";
 import { OrangeButton } from "@/components/ui/OrangeButton";
 
@@ -39,12 +40,12 @@ export function Navbar() {
         style={{ maxWidth: "100%", paddingLeft: "var(--container-padding, 24px)", paddingRight: "var(--container-padding, 24px)" }}
       >
         {/* Logo */}
-        <a href="/" className="block">
+        <Link href="/" className="block">
           <GoodLogo
             className="h-6 w-auto"
             style={{ color: "var(--gf-foreground, #eeeeee)" }}
           />
-        </a>
+        </Link>
 
         {/* Center: MENU button */}
         <button

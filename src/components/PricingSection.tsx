@@ -176,7 +176,7 @@ export function PricingSection() {
               marginBottom: "12px",
             }}
           >
-            // PRICING
+            {'// PRICING'}
           </span>
           <h2
             style={{

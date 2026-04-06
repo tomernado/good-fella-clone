@@ -122,7 +122,7 @@ export function ProcessSection() {
                     color: "rgb(129,128,129)",
                   }}
                 >
-                  // PROCESS
+                  {'// PROCESS'}
                 </span>
               </div>
 
@@ -299,7 +299,7 @@ export function ProcessSection() {
                 color: "rgb(129,128,129)",
               }}
             >
-              // PROCESS
+              {'// PROCESS'}
             </span>
             <h2
               style={{

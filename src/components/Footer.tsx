@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { GoodLogo } from "./icons";
 
 const navLinks = ["Work", "Services", "Pricing", "FAQ"] as const;
@@ -27,11 +28,11 @@ export default function Footer() {
           <div
             style={{ display: "flex", flexDirection: "column", gap: "8px" }}
           >
-            <a href="/">
+            <Link href="/">
               <GoodLogo
                 style={{ height: "20px", width: "auto", color: "rgb(238,238,238)" }}
               />
-            </a>
+            </Link>
             <span
               style={{
                 fontFamily: "var(--font-mono)",
